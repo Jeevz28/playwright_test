@@ -13,5 +13,5 @@ test('Page opening', async({page})=>
  const login = new loginpage(page);
  await login.login_func(process.env.username,process.env.password);
  await login.login_click();
- await expect(page).toHaveURL(/dashboard/);
+ await expect(page).toHaveURL(/options/);
 });
