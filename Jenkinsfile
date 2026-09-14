@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    environment {
+        BASE_URL = 'https://addisproduction-production.up.railway.app'
+    }
+
+
     stages {
 
         stage('Install Dependencies') {
