@@ -3,6 +3,8 @@ pipeline {
 
     environment {
         BASE_URL = 'https://addisproduction-production.up.railway.app'
+        password = credentials('adis-password')
+        username = credentials('adis-username')
     }
 
 
