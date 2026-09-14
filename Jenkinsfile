@@ -24,6 +24,7 @@ pipeline {
 
         stage('Run Playwright Tests') {
             steps {
+                bat 'echo CI=%CI%'
                 bat 'npx playwright test'
             }
         }
